@@ -115,7 +115,11 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
             <ReactDatePicker
               showTimeSelect={props.showTimeSelect ?? false}
               selected={field.value}
-              onChange={(date: Date) => field.onChange(date)}
+              // onChange={(date: Date) => field.onChange(date)}
+              onChange={(
+                date: Date | null,
+                event?: React.SyntheticEvent<any, Event>
+              ) => field.onChange(date)}
               timeInputLabel="Time:"
               dateFormat={props.dateFormat ?? "MM/dd/yyyy"}
               wrapperClassName="date-picker"
