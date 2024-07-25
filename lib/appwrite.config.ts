@@ -13,7 +13,7 @@ export const {
 
 const client = new sdk.Client();
 client
-  .setEndpoint(ENDPOINT!)
+  .setEndpoint(`${ENDPOINT}`)
   .setProject(APPWRITE_PROJECT_ID!)
   .setKey(APPWRITE_API_KEY!);
 

@@ -336,6 +336,15 @@
   align-items: center !important;
 }
 
+.react-datepicker__calendar-icon {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+  padding: 0 !important;
+  top: 50% !important;
+  left: 2% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
 /* =====  REACT PHONE NUMBER INPUT OVERRIDES */
 .PhoneInputInput {
   outline: none;
